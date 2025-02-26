@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The A through Zs of Animal Tattoos</title>
+    <link rel="stylesheet" href="stylei.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Redacted&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="title">
+        ABC's of Animal Tattoos
+    </div>
+
+    <div id="bodytext">
+        If you are in the market for an animal tattoo design, this is just for you. Use the text box to type any letter A through Z, and it will auto generate an animal starting with that letter. Keep in mind some letters are more difficult than others to generate an animal, so some have the A through Z letter in the name only. Scroll down to view your result fully.
+    </div>
+
+
+    <div class="input-container">
+        <!-- INPUT FIELD FOR 1 CHARACTER -->
+        <input type="text" id="charInput" maxlength="1">
+        
+        <!-- BUTTON TO DISPLAY IMAGE -->
+        <button onclick="displayImage()" id="submitButton">Reveal Image</button>
+    </div>
+    
+    <!-- IMAGE TO DISPLAY -->
+    <img id="displayedImage" src="" alt="Displayed Image">
+    
+    <!-- Image Display Script Below -->
+    <script>
+        // Array of images
+        // DIRECTIONS: UPDATE THE URLS WITH THE RELATIVE LINKS OF YOUR IMAGES
+        const images = [
+            "assets/A.jpg", //A
+            "assets/B.jpg", //B
+            "assets/C.jpg", //C
+            "assets/D.jpg", //D
+            "assets/E.jpg", //E
+            "assets/F.jpeg", //F
+            "assets/G.jpg", //G
+            "assets/H.jpg", //H
+            "assets/I.jpg", //I
+            "assets/J.jpg", //J
+            "assets/K.jpg", //K
+            "assets/L.jpg", //L
+            "assets/M.jpg", //M
+            "assets/N.jpg", //N
+            "assets/O.jpg", //O
+            "assets/P.jpg", //P
+            "assets/Q.jpeg", //Q
+            "assets/R.jpg", //R
+            "assets/S.jpg", //S
+            "assets/T.jpg", //T
+            "assets/U.jpeg", //U
+            "assets/V.jpg", //V
+            "assets/W.jpg", //W
+            "assets/X.jpeg", //X
+            "assets/Y.jpg", //Y
+            "assets/Z.jpg"  //Z
+        ];
+        
+        function displayImage() {
+            const input = document.getElementById("charInput").value.toUpperCase();
+            const imgElement = document.getElementById("displayedImage");
+            
+            // Assign an image based on character (A-Z)
+            const index = input.charCodeAt(0) - 65; // 'A' is 65 in ASCII
+            if (index >= 0 && index < images.length) {
+                imgElement.src = images[index];
+                imgElement.style.display = "block";
+            } else {
+                /*
+                alert("Please enter a letter between A and Z.");
+                imgElement.style.display = "none";
+                */
+                
+                // IF INVALID INPUT IS ENTERED, DISPLAY ALTERNATE IMAGE
+                imgElement.src = "assets/dice.png"
+                imgElement.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

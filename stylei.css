@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.input-container {
+    margin-top: 15vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+#charInput {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    width: 50px;
+    font-family: 'Space Mono', monospace;
+}
+
+#submitButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+}
+
+#displayedImage {
+    margin-top: 20px;
+    max-width: 80%;
+    max-height: 60vh;
+}
+
+#title {
+    font-family: 'Space Mono', monospace;
+    font-size: 40pt;
+    padding: 100px;
+}
+
+#bodytext {
+    font-family: 'Space Mono', monospace;
+    font-size: 20pt;
+    max-width: 50vw; 
+    text-align: center; 
+    margin: 0 auto; 
+}

@@ -28,14 +28,14 @@ body {
 .size-left {
     width: 500px;
     text-align: justify;
-    margin-right: 700px;
+    margin-right: 35em;
 }
 
 .size-right {
     width: 500px;
     text-align: justify;
     text-align-last: right;
-    margin-left: 700px;
+    margin-left: 35em;
 }
 
 .text-container {

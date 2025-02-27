@@ -62,7 +62,7 @@
    
     
     <!-- IMAGE TO DISPLAY -->
-    <!-- <img id="displayedImage" src="" alt="Displayed Image"> -->
+    <img id="displayedImage" src="" alt="Displayed Image">
     
     <!-- Image Display Script Below -->
     <script>
@@ -98,15 +98,21 @@
         ];
         
         function displayImage() {
+
+            
             const input = document.getElementById("charInput").value.toUpperCase();
             const imgElement = document.getElementById("displayedImage");
-            
+        
+
             // Assign an image based on character (A-Z)
             const index = input.charCodeAt(0) - 65; // 'A' is 65 in ASCII
             if (index >= 0 && index < images.length) {
+
                 imgElement.src = images[index];
                 imgElement.style.display = "block";
-            } else {
+            } 
+            
+            else {
                 /*
                 alert("Please enter a letter between A and Z.");
                 imgElement.style.display = "none";

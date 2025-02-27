@@ -6,48 +6,99 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    pointer-events: none;
 }
 
+#titleImage {
+    max-width: 90%;  
+    height: auto;     
+    display: block;   
+    margin: 0 auto;   
+}
+
+
+.text {
+    display: inline-block;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.size-left {
+    width: 500px;
+    text-align: justify;
+    margin-right: 700px;
+}
+
+.size-right {
+    width: 500px;
+    text-align: justify;
+    text-align-last: right;
+    margin-left: 700px;
+}
+
+.text-container {
+    vertical-align: middle;
+}
+
+
 .input-container {
-    margin-top: 15vh; 
+    margin-top: 5vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;  
     width: 100%;
 }
 
+
 #charInput {
-    padding: 10px;
-    font-size: 18px;
+    padding: 15px;
+    font-size: 200px;  
     text-align: center;
-    width: 50px;
+    width: 1000px;  
+    height: 200px; 
     font-family: 'Space Mono', monospace;
+    border: 2px solid black;
+    border-radius: 30px;
 }
+
 
 #submitButton {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 40px; 
     cursor: pointer;
     font-family: 'Space Mono', monospace;
+    border: none;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
 }
 
-#displayedImage {
-    margin-top: 20px;
-    max-width: 80%;
-    max-height: 60vh;
+#submitButton:hover {
+    background-color: gray;
 }
+
+
+
+#displayedImage {
+    margin-top: 30px;
+    max-width: 90%;  
+    max-height: 70vh;  
+    display: block;
+    border-radius: 10px;
+}
+
 
 #title {
     font-family: 'Space Mono', monospace;
-    font-size: 40pt;
-    padding: 100px;
+    font-size: 50px; 
+    padding: 50px;
+    text-align: center;
 }
 
-#bodytext {
-    font-family: 'Space Mono', monospace;
-    font-size: 20pt;
-    max-width: 50vw; 
-    text-align: center; 
-    margin: 0 auto; 
-}
+

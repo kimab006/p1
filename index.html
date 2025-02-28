@@ -1,128 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inked Inspo</title>
-    <link rel="stylesheet" href="stylei.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Redacted&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Redacted&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="stylei.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redacted&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redacted&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-    
-    <div class="text"> 
-        <img id="titleImage" src="assets/titleonly.png" alt="title card">
+  <body>
+    <div class="text">
+      <img id="titleImage" src="assets/titleonly.png" alt="title card" />
     </div>
 
-   
     <div class="text-container">
-        <div class="text">
-            <div class="size-left">
-            re roll &nbsp;&nbsp;&nbsp;&nbsp; any
-            letter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a-z 
-            <br> <br>
-            hosted by the w o n d e r f u l <br> yours truly &nbsp; <br>
-            &nbsp; <br> 
-            begin &nbsp;&nbsp;&nbsp;&nbsp; by
-            scrolling down
-            </div>
+      <div class="text">
+        <div class="size-left">
+          re roll &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; any <br />
+          letter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a-z
+          <br />
+          <br />
+          hosted &nbsp;by &nbsp;the <br />
+          w o n d e r f u l <br />
+          yours &nbsp;truly &nbsp; <br />
+          &nbsp; <br />
+          begin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by <br />
+          scrolling &nbsp;&nbsp;down
         </div>
+      </div>
 
-        <div class="text">
-            <div class="size-right">
-                26  different possibilites <br>
-                <br>
-                A &nbsp; through &nbsp; Z      
-                all &nbsp;&nbsp;&nbsp;unique 
-                animals <br><br>
-                i &nbsp;n &nbsp;s &nbsp;p &nbsp;i &nbsp;r &nbsp;e&nbsp; <br> 
-                your &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tattoo 
-
-            </div>
+      <div class="text">
+        <div class="size-right">
+          26 different possibilites <br />
+          <br />
+          A &nbsp; through &nbsp; Z all &nbsp;&nbsp;&nbsp;unique animals
+          <br /><br />
+          i &nbsp;n &nbsp;s &nbsp;p &nbsp;i &nbsp;r &nbsp;e&nbsp; 
+          your&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tattoo
         </div>
-    </div>
-
+      </div>
     </div>
 
     <div class="input-container">
-        <!-- INPUT FIELD FOR 1 CHARACTER -->
-        <input type="text" id="charInput" maxlength="1">
-        
-        <!-- BUTTON TO DISPLAY IMAGE -->
-        <button onclick="displayImage()" id="submitButton">Reveal Image</button>
+      <!-- INPUT FIELD FOR 1 CHARACTER -->
+      <input type="text" id="charInput" maxlength="1" />
+
+      <!-- BUTTON TO DISPLAY IMAGE -->
+      <button onclick="displayImage()" id="submitButton">Reveal Image</button>
     </div>
 
-   
-    
     <!-- IMAGE TO DISPLAY -->
-    <img id="displayedImage" src="" alt="Displayed Image">
-    
+    <img id="displayedImage" src="" alt="Displayed Image" />
+
     <!-- Image Display Script Below -->
     <script>
-        // Array of images
-        // DIRECTIONS: UPDATE THE URLS WITH THE RELATIVE LINKS OF YOUR IMAGES
-        const images = [
-            "assets/A.jpg", //A
-            "assets/B.jpg", //B
-            "assets/C.jpg", //C
-            "assets/D.jpg", //D
-            "assets/E.jpg", //E
-            "assets/F.jpeg", //F
-            "assets/G.jpg", //G
-            "assets/H.jpg", //H
-            "assets/I.jpg", //I
-            "assets/J.jpg", //J
-            "assets/K.jpg", //K
-            "assets/L.jpg", //L
-            "assets/M.jpg", //M
-            "assets/N.jpg", //N
-            "assets/O.jpg", //O
-            "assets/P.jpg", //P
-            "assets/Q.jpeg", //Q
-            "assets/R.jpg", //R
-            "assets/S.jpg", //S
-            "assets/T.jpg", //T
-            "assets/U.jpeg", //U
-            "assets/V.jpg", //V
-            "assets/W.jpg", //W
-            "assets/X.jpeg", //X
-            "assets/Y.jpg", //Y
-            "assets/Z.jpg"  //Z
-        ];
-        
-        function displayImage() {
+      // Array of images
+      // DIRECTIONS: UPDATE THE URLS WITH THE RELATIVE LINKS OF YOUR IMAGES
+      const images = [
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/A.JPG?v=1740694137696", //A
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/B.JPG?v=1740694195484", //B
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/C.JPG?v=1740694199338", //C
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/D.JPG?v=1740694203328", //D
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/E.JPG?v=1740694208036", //E
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/F.jpeg?v=1740694215410", //F
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/G.JPG?v=1740694219106", //G
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/H.JPG?v=1740694223113", //H
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/I.JPG?v=1740694226136", //I
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/J.JPG?v=1740694230090", //J
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/K.JPG?v=1740694234350", //K
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/L.JPG?v=1740694238504", //L
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/M.JPG?v=1740694242689", //M
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/N.JPG?v=1740694247409", //N
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/O.JPG?v=1740694252597", //O
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/P.JPG?v=1740694257933", //P
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/Q.jpeg?v=1740694262207", //Q
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/R.JPG?v=1740694266549", //R
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/SS.jpg?v=1740703171545", //S
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/T.JPG?v=1740694277324", //T
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/U.jpeg?v=1740694282507", //U
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/V.JPG?v=1740694288001", //V
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/W.JPG?v=1740694293027", //W
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/X.jpeg?v=1740694297812", //X
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/Y.JPG?v=1740694301584", //Y
+        "https://cdn.glitch.global/f9ef5395-35ed-45d4-a89b-aa5e2bf356c4/Z.JPG?v=1740694308187", //Z
+      ];
 
-            
-            const input = document.getElementById("charInput").value.toUpperCase();
-            const imgElement = document.getElementById("displayedImage");
-        
+      function displayImage() {
+        const input = document.getElementById("charInput").value.toUpperCase();
+        const imgElement = document.getElementById("displayedImage");
 
-            // Assign an image based on character (A-Z)
-            const index = input.charCodeAt(0) - 65; // 'A' is 65 in ASCII
-            if (index >= 0 && index < images.length) {
-
-                imgElement.src = images[index];
-                imgElement.style.display = "block";
-            } 
-            
-            else {
-                /*
+        // Assign an image based on character (A-Z)
+        const index = input.charCodeAt(0) - 65; // 'A' is 65 in ASCII
+        if (index >= 0 && index < images.length) {
+          imgElement.src = images[index];
+          imgElement.style.display = "block";
+        } else {
+          /*
                 alert("Please enter a letter between A and Z.");
                 imgElement.style.display = "none";
                 */
-                
-                // IF INVALID INPUT IS ENTERED, DISPLAY ALTERNATE IMAGE
-                imgElement.src = "assets/dice.png"
-                imgElement.style.display = "block";
-            }
+
+          // IF INVALID INPUT IS ENTERED, DISPLAY ALTERNATE IMAGE
+          imgElement.src = "assets/dice.png";
+          imgElement.style.display = "block";
         }
+      }
     </script>
-</body>
+  </body>
 </html>
